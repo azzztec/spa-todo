@@ -7,7 +7,6 @@ import {
 } from '@shared/constants';
 import MainPage from '@pages/Main/MainPage';
 import ProjectsPage from '@pages/Projects/ProjectsPage';
-import Tasks from '@containers/Tasks/Tasks';
 import NotFoundPage from '@pages/NotFound/NotFound';
 import TasksPage from '@pages/Tasks/TasksPage';
 

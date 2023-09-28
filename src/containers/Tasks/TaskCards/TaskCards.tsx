@@ -3,7 +3,6 @@ import {
   DoubleChevronUp,
   DoubleChevronDown,
   HorizontalDotsIcon,
-  ToDoIcon,
   HorizontalLines,
 } from '@components/shared/icons';
 import { filterByStatus } from '@services/tasksService';
@@ -12,7 +11,6 @@ import { getTaskCardFormattedTimestamp } from '@shared/utils/dateUtils';
 import { useState } from 'react';
 import EditTaskModal from '../EditTaskModal/EditTaskModal';
 import styles from './index.module.scss';
-import Subtasks from './Subtasks/Subtasks';
 
 export interface TaskCardProps {
   tasks: ITask[];
