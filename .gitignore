@@ -19,3 +19,6 @@ yarn-error.log*
 .eslintcache
 
 .vscode
+
+# Local Netlify folder
+.netlify
