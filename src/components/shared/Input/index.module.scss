@@ -1,0 +1,37 @@
+@import "../../../assets/styles/mixins.scss";
+
+.label {
+  font-weight: 600;
+  color: var(--input-label-color);
+  display: block;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 4px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  color: var(--input-font-color);
+  border: 1px solid var(--bg-primary-color);
+  background: rgba(var(--bg-primary-color-rgb), 0.6);
+  transition: border .3s ease;
+  &::placeholder {
+      color: var(--input-font-color);
+  }
+  &:focus {
+      outline: none;
+      border-color: var(--btn-neutral-color);
+  }
+}
+
+.error {
+  color: #db4437;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 12px;
+  margin-top: 4px;
+}

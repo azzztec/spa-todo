@@ -1,0 +1,33 @@
+@import "../../../assets/styles/mixins.scss";
+
+.name {
+  font-size: 18px;
+}
+
+.status {
+  display: flex;
+  column-gap: 6px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 5px;
+}
+
+.queued {
+  color: var(--queued-task-color);
+}
+
+.dev {
+  color: var(--dev-task-color);
+}
+
+.done {
+  color: var(--done-task-color);
+}
+
+.tasks_link {
+  @include link();
+}

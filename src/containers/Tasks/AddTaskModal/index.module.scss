@@ -1,0 +1,9 @@
+@import "../../../assets/styles/mixins.scss";
+
+.add_task_modal {
+  @include modal_container()
+}
+
+.add_task_modal_title {
+  @include modal_title()
+}

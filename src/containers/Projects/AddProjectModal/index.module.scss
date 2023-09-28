@@ -1,0 +1,9 @@
+@import "../../../assets/styles/mixins.scss";
+
+.edit_modal {
+  @include modal_container();
+}
+
+.edit_modal_title {
+  @include modal_title();
+}

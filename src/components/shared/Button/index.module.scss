@@ -1,0 +1,98 @@
+@mixin size($paddingY, $paddingX, $fontSize) {
+  padding: $paddingY $paddingX;
+  font-size: $fontSize;
+}
+
+@mixin color($color) {
+
+  &.button_variant_text {
+    color: rgba($color, 0.8);
+
+    &:hover {
+      color: rgba($color, 1);
+    }
+  }
+
+  &.button_variant_contained {
+    background-color: rgba($color, 0.8);
+
+    &:hover {
+      background-color: rgba($color, 1);
+    }
+  }
+
+  &.button_variant_outlined {
+    color: rgba($color, 0.8);
+    border-color: rgba($color, 0.8);
+
+    &:hover {
+      color: rgba($color, 1);
+      border-color: rgba($color, 1);
+    }
+  }
+}
+
+@mixin variant($width) {
+  border: $width solid;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.button_size_small {
+  @include size(4px, 10px, 13px);
+}
+
+.button_size_medium {
+  @include size(6px, 14px, 14px);
+}
+
+.button_size_large {
+  @include size(8px, 22px, 15px);
+}
+
+.button_color_success {
+  @include color(var(--btn-success-color-rgb));
+}
+
+.button_color_error {
+  @include color(var(--btn-error-color-rgb));
+}
+
+.button_color_neutral {
+  @include color(var(--btn-neutral-color-rgb));
+}
+
+.button_variant_text {
+  @include variant(0);
+  background-color: transparent;
+}
+
+.button_variant_contained {
+  @include variant(0);
+  color: inherit;
+}
+
+.button_variant_outlined {
+  @include variant(2px);
+  background-color: transparent;
+}
+
+.button_variant_empty {
+  @include variant(0);
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+}

@@ -1,0 +1,39 @@
+.subtasks {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.subtask {
+  margin-left: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+  user-select: none;
+
+  &::before {
+    content: "○";
+    display:inline-block;
+    color: var(--font-secondary-color);
+    margin-right: 5px;
+  }
+
+  &:hover {
+    color: var(--btn-success-color);
+  }
+}
+
+.subtask_done {
+  text-decoration: line-through;
+  cursor: default;
+
+  &::before {
+    content: "✔";
+    cursor: default;
+    color: var(--btn-success-color);
+  }
+
+  &:hover {
+    color: inherit;
+  }
+}

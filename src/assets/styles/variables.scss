@@ -1,0 +1,45 @@
+:root {
+  //bg
+  --bg-primary-color: #1c2532;
+  --bg-primary-color-rgb: 28, 37, 50;
+
+  --bg-secondary-dark-color: #081018;
+  --bg-secondary-dark-color-rgb: 8, 16, 24;
+
+  //font
+  --font-primary-color: #eeeeef;
+  --font-primary-color-rgb: 238, 238, 239;
+
+  --font-secondary-color: #747677;
+  --font-secondary-color-rgb: 116, 118, 119;
+
+  --font-accent-color: #d25050;
+  --font-accent-color-rgb: 210, 80, 80;
+
+  //btn
+  --btn-success-color: #40A840;
+  --btn-success-color-rgb: 64, 168, 64;
+
+  --btn-error-color: #d25050;
+  --btn-error-color-rgb: 210,80,80;
+
+  --btn-neutral-color: #2a86ff;
+  --btn-neutral-color-rgb: 42, 134, 255;
+
+  --btn-neutral-color-dark: #1957a8;
+  --btn-neutral-color-dark-rgb: 25, 87, 168;
+
+  //input
+  --input-font-color: #777d82;
+  --input-font-color-rgb: 119, 125, 130;
+  --input-label-color: #344054;
+
+  //other
+  --queued-task-color: #1c54bd;
+  --dev-task-color: #ba8b1e;
+  --done-task-color: #28ba1e;
+
+  --high-priority-color: #ff2e2e;
+  --medium-priority-color: #eeff2e;
+  --low-priority-color: #2eff31;
+}

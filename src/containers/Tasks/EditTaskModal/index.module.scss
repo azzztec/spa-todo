@@ -1,0 +1,15 @@
+@import "../../../assets/styles/mixins.scss";
+
+.edit_task_modal {
+  @include modal_container()
+}
+
+.edit_task_modal_title {
+  @include modal_title()
+}
+
+.buttons_modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,33 @@
+@import "../../../assets/styles/mixins.scss";
+
+.column {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  @media (max-width: 1280px) {
+    min-width: 300px;
+    margin-bottom: 35px;
+  }
+}
+
+.column_controls {
+  @include task_card_field();
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column_controls_left {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.add_area {
+  @include button_hover_area();
+}

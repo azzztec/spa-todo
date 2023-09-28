@@ -1,0 +1,36 @@
+.nav {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  height: 60px;
+  padding: 0 10px;
+  column-gap: 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-primary-color);
+}
+
+.nav_links_list {
+  column-gap: 10px;
+  display: flex;
+}
+
+.nav_link {
+  padding: 5px 10px;
+  column-gap: 5px;
+  display: flex;
+  align-items: center;
+
+  @mixin active {
+    border-radius: 10px;
+    background-color: var(--bg-secondary-dark-color);
+  }
+
+  &.active {
+    @include active;
+  }
+
+  &:hover {
+    @include active;
+  }
+}
